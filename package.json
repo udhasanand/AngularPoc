@@ -1,0 +1,29 @@
+{
+  "name": "poc",
+  "version": "3.1.0",
+  "description": "Poc UI Framework",
+  "keywords": [
+    "bootstrap",
+    "admin",
+    "dashboard",
+    "backend",
+    "frontend",
+    "ui",
+    "framework",
+    "template",
+    "theme"
+  ],
+  "author": "pixelcave",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-ng-annotate": "^3.0.0",
+    "grunt-processhtml": "^0.4.1"
+  }
+}
