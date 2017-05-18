@@ -1,0 +1,746 @@
+<!-- Page Header -->
+<div class="content bg-image overflow-hidden" style="background-image: url('assets/img/photos/photo3@2x.jpg');">
+    <div class="push-50-t push-15">
+        <h1 class="h2 text-white animated zoomIn">Ed Central Dashboard</h1>
+        <h2 class="h5 text-white-op animated zoomIn">Welcome Simon Lim</h2>
+    </div>
+</div>
+<!-- END Page Header -->
+
+<!-- Stats -->
+<div class="content bg-white border-b">
+    <div class="row items-push text-uppercase">
+        <div class="col-xs-6 col-sm-3">
+            <div class="font-w700 text-gray-darker animated fadeIn">My Completed Tasks</div>
+            <div class="text-muted animated fadeIn"><small><i class="si si-calendar"></i> Last 30 Days</small></div>
+            <a class="h2 font-w300 text-primary animated flipInX" href="javascript:void(0)">23</a>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+            <div class="font-w700 text-gray-darker animated fadeIn">Team's Completed Tasks</div>
+            <div class="text-muted animated fadeIn"><small><i class="si si-calendar"></i> Last 30 Days</small></div>
+            <a class="h2 font-w300 text-primary animated flipInX" href="javascript:void(0)">127</a>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+            <div class="font-w700 text-gray-darker animated fadeIn">My Rating</div>
+            <div class="text-muted animated fadeIn"><small><i class="si si-calendar"></i> Last 3 Months</small></div>
+            <div class="js-rating rateReadOnly" data-score="4"></div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+            <div class="font-w700 text-gray-darker animated fadeIn">Team's Rating</div>
+            <div class="text-muted animated fadeIn"><small><i class="si si-calendar"></i> Last 3 Months</small></div>
+            <div class="js-rating rateReadOnly" data-score="3.5"></div>
+        </div>
+    </div>
+</div>
+<!-- END Stats -->
+
+<!-- Page Content -->
+<div class="content">
+                    <div class="row">
+                        <div class="col-sm-5 col-lg-3">
+                            <!-- Collapsible Inbox Navigation (using Bootstrap collapse functionality) -->
+                            <button class="btn btn-block btn-primary visible-xs push" data-toggle="collapse" data-target="#inbox-nav" type="button">Navigation</button>
+                            <div class="collapse navbar-collapse remove-padding" id="inbox-nav">
+                                <!-- Inbox Menu -->
+                                <div class="block">
+                                    <div class="block-header bg-gray-lighter">
+                                        <ul class="block-options">
+                                            <li>
+                                                <button data-toggle="modal" data-target="#modal-compose" type="button"><i class="fa fa-pencil"></i> New Assignment</button>
+                                            </li>
+                                        </ul>
+                                        <h3 class="block-title">Inbox</h3>
+                                    </div>
+                                    <div class="block-content">
+                                        <ul class="nav nav-pills nav-stacked push">
+                                            <li class="active">
+                                                <a href="javascript:void(0)">
+                                                    <span class="badge pull-right">45</span><i class="fa fa-fw fa-users push-5-r"></i> Team Tasks
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <span class="badge pull-right">8</span><i class="fa fa-fw fa-user push-5-r"></i> My Tasks
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <span class="badge pull-right">4</span><i class="fa fa-fw fa-bell-o push-5-r"></i> Alerts
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <span class="badge pull-right">2</span><i class="fa fa-fw fa-commenting-o push-5-r"></i> Messages
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <span class="badge pull-right">10</span><i class="fa fa-fw fa-trash push-5-r"></i> Rejected
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- END Inbox Menu -->
+
+                                <!-- Friends -->
+                                <div class="block">
+                                    <div class="block-header bg-gray-lighter">
+                                        <ul class="block-options">
+                                            <li>
+                                                <button type="button"><i class="si si-settings"></i></button>
+                                            </li>
+                                        </ul>
+                                        <h3 class="block-title">Team</h3>
+                                    </div>
+                                    <div class="block-content">
+                                        <ul class="nav-users push">
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <img class="img-avatar" src="assets/img/avatars/avatar7.jpg" alt="">
+                                                    <i class="fa fa-circle text-success"></i> Linda Moore
+                                                    <div class="font-w400 text-muted"><small>Editor</small></div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <img class="img-avatar" src="assets/img/avatars/avatar10.jpg" alt="">
+                                                    <i class="fa fa-circle text-success"></i> Walter Fox
+                                                    <div class="font-w400 text-muted"><small>Editorial Lead</small></div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <img class="img-avatar" src="assets/img/avatars/avatar5.jpg" alt="">
+                                                    <i class="fa fa-circle text-warning"></i> Tiffany Kim
+                                                    <div class="font-w400 text-muted"><small>Ed Ops</small></div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <img class="img-avatar" src="assets/img/avatars/avatar14.jpg" alt="">
+                                                    <i class="fa fa-circle text-warning"></i> Bruce Edwards
+                                                    <div class="font-w400 text-muted"><small>Editor</small></div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <img class="img-avatar" src="assets/img/avatars/avatar12.jpg" alt="">
+                                                    <i class="fa fa-circle text-danger"></i> Vincent Sims
+                                                    <div class="font-w400 text-muted"><small>System Admin</small></div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- END Friends -->
+
+                            </div>
+                            <!-- END Collapsible Inbox Navigation -->
+                        </div>
+                        <div class="col-sm-7 col-lg-9">
+                            <!-- Message List -->
+                            <div class="block">
+                                <div class="block-header bg-gray-lighter">
+                                    <ul class="block-options">
+                                        <li>
+                                            <button class="js-tooltip" title="Previous 15 Messages" type="button" data-toggle="block-option"><i class="si si-arrow-left"></i></button>
+                                        </li>
+                                        <li>
+                                            <button class="js-tooltip" title="Next 15 Messages" type="button" data-toggle="block-option"><i class="si si-arrow-right"></i></button>
+                                        </li>
+                                        <li>
+                                            <button type="button" data-js-block-option data-action="refresh_toggle" data-action-mode="demo"><i class="si si-refresh"></i></button>
+                                        </li>
+                                        <li>
+                                            <button type="button" data-js-block-option data-action="fullscreen_toggle"></button>
+                                        </li>
+                                    </ul>
+                                    <div class="block-title text-normal">
+                                        <strong>Tasks: 15-30</strong> <span class="font-w400">from</span> <strong>45</strong>
+                                    </div>
+                                </div>
+                                <div class="block-content">
+                                    <!-- Messages Options -->
+                                    <div class="push">
+                                        <button class="btn btn-default pull-right" type="button"><i class="fa fa-times text-danger push-5-l push-5-r"></i> <span class="hidden-xs">Reject</span></button>
+                                        <button class="btn btn-default pull-right" type="button"><i class="fa fa-check text-success push-5-l push-5-r"></i> <span class="hidden-xs">Accept</span></button>
+                                        <div class="btn-group">
+                                            <button class="btn btn-default" type="button"><i class="fa fa-archive text-primary push-5-l push-5-r"></i> <span class="hidden-xs">Archive</span></button>
+                                            <button class="btn btn-default" type="button"><i class="fa fa-bookmark text-danger push-5-l push-5-r"></i> <span class="hidden-xs">Bookmark</span></button>
+                                        </div>
+                                    </div>
+                                    <!-- END Messages Options -->
+
+                                    <!-- Messages & Checkable Table (.js-table-checkable class is initialized in App() -> uiHelperTableToolsCheckable()) -->
+                                    <div class="pull-r-l">
+                                        <table class="js-table-checkable table table-hover table-vcenter">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-center" style="width: 70px;">
+                                                        <label class="css-input css-checkbox css-checkbox-primary">
+                                                            <input type="checkbox"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td class="hidden-xs font-w600" style="width: 140px;">Jack Greene</td>
+                                                    <td>
+                                                        <a class="font-w600" data-toggle="modal" data-target="#modal-message" href="javascript:void(0)">Create TOC</a>
+                                                        <div class="text-muted push-5-t">Malaysia > Commentary > Halsbury Laws of Malaysia</div>
+                                                    </td>
+                                                    <td class="visible-lg text-muted" style="width: 80px;">
+                                                        <i class="fa fa-paperclip"></i> (3)
+                                                    </td>
+                                                    <td class="visible-lg text-muted" style="width: 120px;">
+                                                        <em>2 min ago</em>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <label class="css-input css-checkbox css-checkbox-primary">
+                                                            <input type="checkbox"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td class="hidden-xs font-w600">Susan Elliott</td>
+                                                    <td>
+                                                        <a class="font-w600" data-toggle="modal" data-target="#modal-message" href="javascript:void(0)">Data Cleanup</a>
+                                                        <div class="text-muted push-5-t">Singapore > Commentary > Halsbury Laws of Singapore</div>
+                                                    </td>
+                                                    <td class="visible-lg text-muted">
+                                                        <i class="fa fa-paperclip"></i> (2)
+                                                    </td>
+                                                    <td class="visible-lg text-muted">
+                                                        <em>10 min ago</em>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <label class="css-input css-checkbox css-checkbox-primary">
+                                                            <input type="checkbox"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td class="hidden-xs font-w600">George Stone</td>
+                                                    <td>
+                                                        <a class="font-w600" data-toggle="modal" data-target="#modal-message" href="javascript:void(0)">Data Load for 2017 April</a>
+                                                        <div class="text-muted push-5-t">Singapore > Legislation > SG Legislation</div>
+                                                    </td>
+                                                    <td class="visible-lg text-muted"></td>
+                                                    <td class="visible-lg text-muted">
+                                                        <em>25 min ago</em>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <label class="css-input css-checkbox css-checkbox-primary">
+                                                            <input type="checkbox"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td class="hidden-xs font-w600">Sara Holland</td>
+                                                    <td>
+                                                        <a class="font-w600" data-toggle="modal" data-target="#modal-message" href="javascript:void(0)">Please publish online and check MLJ</a>
+                                                        <div class="text-muted push-5-t">Malaysia > Cases > Malayan Law Journal</div>
+                                                    </td>
+                                                    <td class="visible-lg text-muted">
+                                                        <i class="fa fa-paperclip"></i> (1)
+                                                    </td>
+                                                    <td class="visible-lg text-muted">
+                                                        <em>30 min ago</em>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <label class="css-input css-checkbox css-checkbox-primary">
+                                                            <input type="checkbox"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td class="hidden-xs font-w600">Ryan Hall</td>
+                                                    <td>
+                                                        <a class="font-w600" data-toggle="modal" data-target="#modal-message" href="javascript:void(0)">Create TOS / TOC for HLM</a>
+                                                        <div class="text-muted push-5-t">Malaysia > Commentary > HLM</div>
+                                                    </td>
+                                                    <td class="visible-lg text-muted"></td>
+                                                    <td class="visible-lg text-muted">
+                                                        <em>1 hour ago</em>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center" style="width: 70px;">
+                                                        <label class="css-input css-checkbox css-checkbox-primary">
+                                                            <input type="checkbox"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td class="hidden-xs font-w600" style="width: 140px;">Jack Greene</td>
+                                                    <td>
+                                                        <a class="font-w600" data-toggle="modal" data-target="#modal-message" href="javascript:void(0)">Create TOC</a>
+                                                        <div class="text-muted push-5-t">Malaysia > Commentary > Halsbury Laws of Malaysia</div>
+                                                    </td>
+                                                    <td class="visible-lg text-muted" style="width: 80px;">
+                                                        <i class="fa fa-paperclip"></i> (3)
+                                                    </td>
+                                                    <td class="visible-lg text-muted" style="width: 120px;">
+                                                        <em>2 min ago</em>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <label class="css-input css-checkbox css-checkbox-primary">
+                                                            <input type="checkbox"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td class="hidden-xs font-w600">Susan Elliott</td>
+                                                    <td>
+                                                        <a class="font-w600" data-toggle="modal" data-target="#modal-message" href="javascript:void(0)">Data Cleanup</a>
+                                                        <div class="text-muted push-5-t">Singapore > Commentary > Halsbury Laws of Singapore</div>
+                                                    </td>
+                                                    <td class="visible-lg text-muted">
+                                                        <i class="fa fa-paperclip"></i> (2)
+                                                    </td>
+                                                    <td class="visible-lg text-muted">
+                                                        <em>10 min ago</em>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <label class="css-input css-checkbox css-checkbox-primary">
+                                                            <input type="checkbox"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td class="hidden-xs font-w600">George Stone</td>
+                                                    <td>
+                                                        <a class="font-w600" data-toggle="modal" data-target="#modal-message" href="javascript:void(0)">Data Load for 2017 April</a>
+                                                        <div class="text-muted push-5-t">Singapore > Legislation > SG Legislation</div>
+                                                    </td>
+                                                    <td class="visible-lg text-muted"></td>
+                                                    <td class="visible-lg text-muted">
+                                                        <em>25 min ago</em>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <label class="css-input css-checkbox css-checkbox-primary">
+                                                            <input type="checkbox"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td class="hidden-xs font-w600">Sara Holland</td>
+                                                    <td>
+                                                        <a class="font-w600" data-toggle="modal" data-target="#modal-message" href="javascript:void(0)">Please publish online and check MLJ</a>
+                                                        <div class="text-muted push-5-t">Malaysia > Cases > Malayan Law Journal</div>
+                                                    </td>
+                                                    <td class="visible-lg text-muted">
+                                                        <i class="fa fa-paperclip"></i> (1)
+                                                    </td>
+                                                    <td class="visible-lg text-muted">
+                                                        <em>30 min ago</em>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <label class="css-input css-checkbox css-checkbox-primary">
+                                                            <input type="checkbox"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td class="hidden-xs font-w600">Ryan Hall</td>
+                                                    <td>
+                                                        <a class="font-w600" data-toggle="modal" data-target="#modal-message" href="javascript:void(0)">Create TOS / TOC for HLM</a>
+                                                        <div class="text-muted push-5-t">Malaysia > Commentary > HLM</div>
+                                                    </td>
+                                                    <td class="visible-lg text-muted"></td>
+                                                    <td class="visible-lg text-muted">
+                                                        <em>1 hour ago</em>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center" style="width: 70px;">
+                                                        <label class="css-input css-checkbox css-checkbox-primary">
+                                                            <input type="checkbox"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td class="hidden-xs font-w600" style="width: 140px;">Jack Greene</td>
+                                                    <td>
+                                                        <a class="font-w600" data-toggle="modal" data-target="#modal-message" href="javascript:void(0)">Create TOC</a>
+                                                        <div class="text-muted push-5-t">Malaysia > Commentary > Halsbury Laws of Malaysia</div>
+                                                    </td>
+                                                    <td class="visible-lg text-muted" style="width: 80px;">
+                                                        <i class="fa fa-paperclip"></i> (3)
+                                                    </td>
+                                                    <td class="visible-lg text-muted" style="width: 120px;">
+                                                        <em>2 min ago</em>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <label class="css-input css-checkbox css-checkbox-primary">
+                                                            <input type="checkbox"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td class="hidden-xs font-w600">Susan Elliott</td>
+                                                    <td>
+                                                        <a class="font-w600" data-toggle="modal" data-target="#modal-message" href="javascript:void(0)">Data Cleanup</a>
+                                                        <div class="text-muted push-5-t">Singapore > Commentary > Halsbury Laws of Singapore</div>
+                                                    </td>
+                                                    <td class="visible-lg text-muted">
+                                                        <i class="fa fa-paperclip"></i> (2)
+                                                    </td>
+                                                    <td class="visible-lg text-muted">
+                                                        <em>10 min ago</em>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <label class="css-input css-checkbox css-checkbox-primary">
+                                                            <input type="checkbox"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td class="hidden-xs font-w600">George Stone</td>
+                                                    <td>
+                                                        <a class="font-w600" data-toggle="modal" data-target="#modal-message" href="javascript:void(0)">Data Load for 2017 April</a>
+                                                        <div class="text-muted push-5-t">Singapore > Legislation > SG Legislation</div>
+                                                    </td>
+                                                    <td class="visible-lg text-muted"></td>
+                                                    <td class="visible-lg text-muted">
+                                                        <em>25 min ago</em>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <label class="css-input css-checkbox css-checkbox-primary">
+                                                            <input type="checkbox"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td class="hidden-xs font-w600">Sara Holland</td>
+                                                    <td>
+                                                        <a class="font-w600" data-toggle="modal" data-target="#modal-message" href="javascript:void(0)">Please publish online and check MLJ</a>
+                                                        <div class="text-muted push-5-t">Malaysia > Cases > Malayan Law Journal</div>
+                                                    </td>
+                                                    <td class="visible-lg text-muted">
+                                                        <i class="fa fa-paperclip"></i> (1)
+                                                    </td>
+                                                    <td class="visible-lg text-muted">
+                                                        <em>30 min ago</em>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <label class="css-input css-checkbox css-checkbox-primary">
+                                                            <input type="checkbox"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td class="hidden-xs font-w600">Ryan Hall</td>
+                                                    <td>
+                                                        <a class="font-w600" data-toggle="modal" data-target="#modal-message" href="javascript:void(0)">Create TOS / TOC for HLM</a>
+                                                        <div class="text-muted push-5-t">Malaysia > Commentary > HLM</div>
+                                                    </td>
+                                                    <td class="visible-lg text-muted"></td>
+                                                    <td class="visible-lg text-muted">
+                                                        <em>1 hour ago</em>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- END Messages -->
+                                </div>
+                            </div>
+                            <!-- END Message List -->
+                        </div>
+                    </div>
+
+        <div class="row">
+        <div class="col-lg-8">
+            <!-- Main Dashboard Chart -->
+            <div class="block">
+                <div class="block-header">
+                    <ul class="block-options">
+                        <li>
+                            <button type="button" data-js-block-option data-action="refresh_toggle" data-action-mode="demo"><i class="si si-refresh"></i></button>
+                        </li>
+                    </ul>
+                    <h3 class="block-title">Weekly Overview</h3>
+                </div>
+                <div class="block-content block-content-full bg-gray-lighter text-center">
+                    <!-- Chart.js Chart (.js-dash-chartjs-lines is initialized in js/controllers.js -> 'DashboardCtrl' Controller), for more examples you can check out http://www.chartjs.org/docs/ -->
+                    <div style="height: 374px;"><canvas class="js-dash-chartjs-lines"></canvas></div>
+                </div>
+                <div class="block-content text-center">
+                    <div class="row items-push text-center">
+                        <div class="col-xs-6 col-lg-3">
+                            <div class="push-10"><i class="si si-check fa-2x"></i></div>
+                            <div class="h5 font-w300 text-muted">+ 3 My Tasks Completed</div>
+                        </div>
+                        <div class="col-xs-6 col-lg-3">
+                            <div class="push-10"><i class="si si-users fa-2x"></i></div>
+                            <div class="h5 font-w300 text-muted">+ 12 Team Tasks Completed</div>
+                        </div>
+                        <div class="col-xs-6 col-lg-3 visible-lg">
+                            <div class="push-10"><i class="si si-star fa-2x"></i></div>
+                            <div class="h5 font-w300 text-muted">+ 0.5 Rating</div>
+                        </div>
+                        <div class="col-xs-6 col-lg-3 visible-lg">
+                            <div class="push-10"><i class="si si-docs fa-2x"></i></div>
+                            <div class="h5 font-w300 text-muted">+ 35 Documents</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END Main Dashboard Chart -->
+        </div>
+        <div class="col-lg-4">
+            <!-- Content Grid -->
+            <div class="content-grid">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- Author of the Month -->
+                        <a class="block block-link-hover2" href="javascript:void(0)">
+                            <div class="block-header">
+                                <h3 class="block-title text-center">Contributor of the Month</h3>
+                            </div>
+                            <div class="block-content block-content-full text-center bg-image" style="background-image: url('assets/img/photos/photo2.jpg');">
+                                <div>
+                                    <img class="img-avatar img-avatar96 img-avatar-thumb" src="assets/img/avatars/avatar1.jpg" alt="">
+                                </div>
+                                <div class="h5 text-white push-15-t push-5">Ashley Welch</div>
+                                <div class="h5 text-white-op">Editor</div>
+                            </div>
+                            <div class="block-content">
+                                <div class="row items-push text-center">
+                                    <div class="col-xs-6">
+                                        <div class="push-5"><i class="si si-book-open fa-2x"></i></div>
+                                        <div class="h5 font-w300 text-muted">9 Titles</div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="push-5"><i class="si si-drawer fa-2x"></i></div>
+                                        <div class="h5 font-w300 text-muted">74 Tasks</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- END Author of the Month -->
+
+                        <!-- Mini Stats -->
+                        <a class="block block-link-hover3" href="javascript:void(0)">
+                            <table class="block-table text-center">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 50%;">
+                                            <div class="push-30 push-30-t">
+                                                <i class="si si-docs fa-3x text-primary"></i>
+                                            </div>
+                                        </td>
+                                        <td class="bg-gray-lighter" style="width: 50%;">
+                                            <div class="h1 font-w700"><span class="h2 text-muted">+</span> 1278</div>
+                                            <div class="h5 text-muted text-uppercase push-5-t">Documents</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </a>
+                        <a class="block block-link-hover3" href="javascript:void(0)">
+                            <table class="block-table text-center">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 50%;">
+                                            <div class="push-30 push-30-t">
+                                                <i class="si si-like fa-3x text-danger"></i>
+                                            </div>
+                                        </td>
+                                        <td class="bg-gray-lighter" style="width: 50%;">
+                                            <div class="h1 font-w700"><span class="h2 text-muted">+</span> 69</div>
+                                            <div class="h5 text-muted text-uppercase push-5-t">Likes</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </a>
+                        <a class="block block-link-hover3" href="javascript:void(0)">
+                            <table class="block-table text-center">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 50%;">
+                                            <div class="push-30 push-30-t">
+                                                <i class="si si-star fa-3x text-success"></i>
+                                            </div>
+                                        </td>
+                                        <td class="bg-gray-lighter" style="width: 50%;">
+                                            <div class="h1 font-w700"><span class="h2 text-muted">+</span> 5.0</div>
+                                            <div class="h5 text-muted text-uppercase push-5-t">Average Rating</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </a>
+                        <!-- END Mini Stats -->
+                    </div>
+                </div>
+            </div>
+            <!-- END Content Grid -->
+        </div>
+    </div>
+
+
+        <!-- Apps Modal -->
+        <!-- Opens from the button in the header -->
+        <div class="modal fade" id="apps-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-sm modal-dialog modal-dialog-top">
+                <div class="modal-content">
+                    <!-- Apps Block -->
+                    <div class="block block-themed block-transparent">
+                        <div class="block-header bg-primary-dark">
+                            <ul class="block-options">
+                                <li>
+                                    <button data-dismiss="modal" type="button"><i class="si si-close"></i></button>
+                                </li>
+                            </ul>
+                            <h3 class="block-title">Apps</h3>
+                        </div>
+                        <div class="block-content">
+                            <div class="row text-center">
+                                <div class="col-xs-6">
+                                    <a class="block block-rounded" href="javascript:void(0)">
+                                        <div class="block-content text-white bg-default">
+                                            <i class="si si-speedometer fa-2x"></i>
+                                            <div class="font-w600 push-15-t push-15">Backend</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a class="block block-rounded" href="javascript:void(0)">
+                                        <div class="block-content text-white bg-modern">
+                                            <i class="si si-rocket fa-2x"></i>
+                                            <div class="font-w600 push-15-t push-15">Frontend</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Apps Block -->
+                </div>
+            </div>
+        </div>
+        <!-- END Apps Modal -->
+
+        <!-- Compose Modal -->
+        <div class="modal fade" id="modal-compose" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-top">
+                <div class="modal-content">
+                    <div class="block block-themed block-transparent remove-margin-b">
+                        <div class="block-header bg-success">
+                            <ul class="block-options">
+                                <li>
+                                    <button data-dismiss="modal" type="button"><i class="si si-close"></i></button>
+                                </li>
+                            </ul>
+                            <h3 class="block-title"><i class="fa fa-pencil"></i> New Assignment</h3>
+                        </div>
+                        <div class="block-content">
+                            <form class="form-horizontal push-10-t push-10" action="javascript:void(0)" method="post" onsubmit="return false;">
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <div class="form-material form-material-success floating input-group">
+                                            <input class="form-control" type="email" id="message-email" name="message-email">
+                                            <label for="message-email">Subject</label>
+                                            <span class="input-group-addon"><i class="si si-envelope-open"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <div class="form-material form-material-success floating input-group">
+                                            <input class="form-control" type="text" id="message-subject" name="message-subject">
+                                            <label for="message-subject">Other Fields</label>
+                                            <span class="input-group-addon"><i class="si si-book-open"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <div class="form-material form-material-success floating">
+                                            <textarea class="form-control" id="message-msg" name="message-msg" rows="6"></textarea>
+                                            <label for="message-msg">Description</label>
+                                        </div>
+                                        <div class="help-block text-right">Feel free to use common tags: &lt;blockquote&gt;, &lt;strong&gt;, &lt;em&gt;</div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <button class="btn btn-sm btn-success" type="submit"><i class="fa fa-send push-5-r"></i> Create Assignment</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Compose Modal -->
+
+        <!-- Message Modal -->
+        <div class="modal fade" id="modal-message" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-popout">
+                <div class="modal-content">
+                    <div class="block block-themed block-transparent remove-margin-b">
+                        <div class="block-header bg-primary-dark">
+                            <ul class="block-options">
+                                <li>
+                                    <button data-toggle="tooltip" data-placement="left" title="Reply" type="button"><i class="si si-action-undo"></i></button>
+                                </li>
+                                <li>
+                                    <button data-dismiss="modal" type="button"><i class="si si-close"></i></button>
+                                </li>
+                            </ul>
+                            <h3 class="block-title">Task Assignment 125139: Create TOC</h3>
+                        </div>
+                        <div class="block-content block-content-full bg-image text-center" style="background-image: url('assets/img/photos/photo7.jpg');">
+                            <img class="img-avatar img-avatar96 img-avatar-thumb" src="assets/img/avatars/avatar4.jpg" alt="">
+                        </div>
+                        <div class="block-content block-content-full block-content-mini bg-gray-lighter">
+                            <span class="font-s13 text-muted pull-right"><em>2 min ago</em></span>
+                            <a class="font-s13" href="javascript:void(0)">service@ecj.lexisnexis.com</a>
+                        </div>
+                        <div class="block-content">
+                            <p>Details of Assignment Task here...</p>
+                            <p>Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum quis in sit varius lorem sit metus mi.</p>
+                            <p>Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum quis in sit varius lorem sit metus mi.</p>                           
+                        </div>
+                        <div class="block-content bg-gray-lighter">
+                            <div class="row items-push">
+
+                                <div class="col-sm-4">
+                                    <div class="img-container fx-img-zoom-in">
+                                        <img class="img-responsive" src="assets/img/photos/photo1.jpg" alt="">
+                                        <div class="img-options">
+                                            <div class="img-options-content">
+                                                <a class="btn btn-sm btn-default" href="javascript:void(0)"><i class="fa fa-download"></i> Download</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="font-s13 text-muted push-5-t">Attachment</div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="block-content">
+                                    <div class="row text-right">
+                                        <!-- Messages Options -->
+                                        Rate Assignment:&nbsp;
+                                        <div class="js-rating"></div>
+                                        <br/>
+                                    </div>
+                                    <div class="row">
+                                        <div class="push">
+                                            <button class="btn btn-default pull-right" type="button"><i class="fa fa-times text-danger push-5-l push-5-r"></i> <span class="hidden-xs">Reject</span></button>
+                                            <button class="btn btn-default pull-right" type="button"><i class="fa fa-check text-success push-5-l push-5-r"></i> <span class="hidden-xs">Accept</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Message Modal -->
+    </div>
+
+
+    
+    
+</div>
+<!-- END Page Content -->

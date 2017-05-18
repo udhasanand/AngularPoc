@@ -1,0 +1,133 @@
+<!-- Header Navigation Right -->
+<ul class="nav-header pull-right">
+    <li>
+        <div class="btn-group" data-on-toggle="toggled(open)" data-uib-dropdown>
+            <button class="btn btn-default btn-image" type="button" data-uib-dropdown-toggle>
+                <img src="assets/img/avatars/avatar10.jpg" alt="Avatar">
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu-right" data-uib-dropdown-menu>
+                <li class="dropdown-header">Profile</li>
+                <li>
+                    <a tabindex="-1" href="javascript:void(0)">
+                        <i class="si si-envelope-open pull-right"></i>
+                        <span class="badge badge-primary pull-right">3</span>Team Tasks
+                    </a>
+                </li>
+                <li>
+                    <a tabindex="-1" href="javascript:void(0)">
+                        <i class="si si-user pull-right"></i>
+                        <span class="badge badge-success pull-right">{{userTask.length}}</span>My Tasks
+                    </a>
+                </li>
+                <li>
+                    <a tabindex="-1" href="javascript:void(0)">
+                        <i class="si si-settings pull-right"></i>Settings
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Actions</li>
+                <li>
+                    <a tabindex="-1" href="javascript:void(0)">
+                        <i class="si si-key pull-right"></i>Admin
+                    </a>
+                </li>
+                <li>
+                    <a tabindex="-1" href="javascript:void(0)">
+                        <i class="si si-cloud-download pull-right"></i>X-Metal Plugin
+                    </a>
+                </li>
+                <li>
+                    <a tabindex="-1" href="javascript:void(0)" ng-click="logout();">
+                        <i class="si si-logout pull-right"></i>Log out
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <button class="btn btn-default" type="button" data-ng-click="oneui.settings.sideOverlayOpen = ! oneui.settings.sideOverlayOpen" data-js-blur>
+            <i class="fa fa-tasks"></i>
+        </button>
+    </li>
+</ul>
+<!-- END Header Navigation Right -->
+
+<!-- Header Navigation Left -->
+<ul class="nav-header pull-left">
+    <li class="hidden-md hidden-lg">
+        <button class="btn btn-default" type="button" data-ng-click="oneui.settings.sidebarOpenXs = ! oneui.settings.sidebarOpenXs" data-js-blur>
+            <i class="fa fa-navicon"></i>
+        </button>
+    </li>
+    <li class="hidden-xs hidden-sm">
+        <button class="btn btn-default" type="button" data-ng-click="oneui.settings.sidebarMini = ! oneui.settings.sidebarMini" data-js-blur>
+            <i class="fa fa-ellipsis-v"></i>
+        </button>
+    </li>
+    <li class="visible-xs">
+        <!-- Toggle class helper (data-js-toggle-class attribute is initialized in js/directives.js) -->
+        <button class="btn btn-default" type="button" data-js-toggle-class="{target: '.js-header-search', class: 'header-search-xs-visible'}" data-js-blur>
+            <i class="fa fa-search"></i>
+        </button>
+    </li>
+    <li class="hidden-xs hidden-sm">
+        <button class="btn btn-default" type="button" data-js-toggle-class="{target: '.js-header-search-filter', class: 'hidden'}" data-js-blur>
+            <i class="fa fa-filter"></i>
+        </button>
+    </li>
+    <li class="js-header-search header-search">
+        <form class="form-inline" action="index.html" method="post">
+            <div class="js-header-search-filter hidden">
+                <div class="form-material form-material-primary form-group remove-margin-t remove-margin-b">
+                    <select class="form-control" id="example2-select2-multiple" name="example2-select2-multiple">
+                        <option value="1">AU</option>
+                        <option value="2">BR</option>
+                        <option value="3">HK</option>
+                        <option value="7">IN</option>
+                        <option value="4">MY</option>
+                        <option value="5">NZ</option>
+                        <option value="6">SG</option>
+                    </select>
+                </div>
+                <div class="form-material form-material-primary form-group remove-margin-t remove-margin-b">
+                    <select class="form-control" id="example2-select2-multiple2" name="example2-select2-multiple2">
+                        <option value="1">Cases</option>
+                        <option value="2">Legislation</option>
+                        <option value="3">HAP</option>
+                        <option value="4">Service6</option>
+                        <option value="4">Article</option>
+                        <option value="4">Citator</option>
+                    </select>
+                </div>
+                <div class="form-material form-material-primary form-group remove-margin-t remove-margin-b">
+                    <select class="form-control" id="example2-select2-multiple3" name="example2-select2-multiple3">
+                        <option value="1">ACP</option>
+                        <option value="2">ERL</option>
+                        <option value="3">PIL</option>
+                        <option value="4">CONT</option>
+                        <option value="5">FORD</option>
+                        <option value="6">TR</option>
+                        <option value="7">ABCA</option>
+                    </select>
+                </div>
+                <div class="form-material form-material-primary form-group remove-margin-t remove-margin-b">
+                    <select class="form-control" id="example2-select2-multiple4" name="example2-select2-multiple4">
+                        <option value="1">casename</option>
+                        <option value="2">caseopt</option>
+                        <option value="3">court</option>
+                        <option value="4">courtid</option>
+                        <option value="5">fileno</option>
+                        <option value="6">part</option>
+                        <option value="7">year</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-material form-material-primary input-group remove-margin-t remove-margin-b" style="width: 100%;">
+                <input class="form-control" type="text" id="base-material-text" name="base-material-text" placeholder="Search..">
+                <span class="input-group-addon"><i class="si si-magnifier"></i></span>
+            </div>
+        </form>
+    </li>
+</ul>
+<!-- END Header Navigation Left -->

@@ -1,0 +1,287 @@
+<!-- Page Header -->
+<style>
+    .disableMenu {
+        opacity: .4;
+        cursor: default;
+        pointer-events: none;
+    }    
+</style>
+<div class="content bg-gray-lighter">
+    <div class="row items-push">
+        <div class="col-sm-7">
+            <h1 class="page-heading">
+                Content Tree <small>Access to your editorial content.</small>
+            </h1>
+        </div>
+        <div class="col-sm-5 text-right hidden-xs">
+            <ol class="breadcrumb push-10-t">
+                <li>Ed Central</li>
+                <li><a class="link-effect" href="">Content Tree</a></li>
+            </ol>
+        </div>
+    </div>
+</div>
+<!-- END Page Header -->
+
+<!-- Page Content -->
+<div class="content">
+    <div class="row">
+        <div class="col-sm-6 col-md-3">
+            <a class="block block-link-hover3 text-center" href="javascript:void(0)">
+                <div class="block-content block-content-full">
+                    <div class="h1 font-w700 text-info"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="block-content block-content-full block-content-mini bg-gray-lighter text-info font-w600">Group Tasks</div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <a class="block block-link-hover3 text-center" href="javascript:void(0)">
+                <div class="block-content block-content-full">
+                    <div class="h1 font-w700 text-danger" data-js-count-to data-to="2"></div>
+                </div>
+                <div class="block-content block-content-full block-content-mini bg-gray-lighter text-danger font-w600">Delayed Tasks</div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <a class="block block-link-hover3 text-center" href="javascript:void(0)">
+                <div class="block-content block-content-full">
+                    <div class="h1 font-w700" data-js-count-to data-to="6"></div>
+                </div>
+                <div class="block-content block-content-full block-content-mini bg-gray-lighter text-muted font-w600">Current Tasks</div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <a class="block block-link-hover3 text-center" href="javascript:void(0)">
+                <div class="block-content block-content-full">
+                    <div class="h1 font-w700 text-success" data-js-count-to data-to="75"></div>
+                </div>
+                <div class="block-content block-content-full block-content-mini bg-gray-lighter text-success font-w600">Completed Tasks</div>
+            </a>
+        </div>
+    </div>
+    <!-- END Header Tiles -->
+
+    <!-- All Products -->
+    <div class="block" id="tree-block">
+        <div class="block-header bg-gray-lighter">
+            <ul class="block-options">
+                <li class="dropdown">
+                    <button type="button" data-toggle="dropdown">Filter <span class="caret"></span></button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                            <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">188</span>All Content</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">15</span>Cases / Reports</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">30</span>Legislation</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">8</span>Commentary</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">15</span>Journals</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">30</span>Dictionaries</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+                <h3 class="block-title">Action on selected:</h3>
+                <!-- Standard button -->
+                <button type="button" class="btn" ng-class="isMeta ? '' : 'btn-info'" ng-disabled="isMeta" data-toggle="modal" data-target="#modal-popout" >View Metadata</button>
+
+                <!-- Single button -->
+                <div class="btn-group">
+                  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ng-disabled="isStableMenu" ng-class="isStableMenu ? '' : 'btn-danger'">
+                    Stable Data <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li ng-repeat="menu in stableRightClickMenuList" ng-class="menu == 'Copy Chapter' ? '' : 'disableMenu'">
+                        <a href="javascript:void(0)" data-ng-click="actionOnMenuClick(menu)" >{{menu}}</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Single button -->
+                <div class="btn-group">
+                  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ng-disabled="isWipMenu" ng-class="isWipMenu ? '' : 'btn-success'">
+                    WIP Data <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li ng-repeat="menu in wipRightClickMenuList" ng-class="menu == 'Export Chapter' ? '' : 'disableMenu'">
+                        <a href="javascript:void(0)" data-ng-click="actionOnWipMenuClick(menu)">{{menu}}</a>
+                    </li>                 
+                  </ul>
+                </div>
+
+        </div>
+        <div class="block-content">
+                <!-- Tree View Container -->
+                <div class="js-tree-badges"></div>
+                <div>
+                    <h3 class="block-title">Action on selected:</h3>
+                    <!-- Standard button -->
+                    <button type="button" class="btn" ng-class="isMeta ? '' : 'btn-info'" ng-disabled="isMeta" data-toggle="modal" data-target="#modal-popout" >View Metadata</button>
+
+                    <!-- Single button -->
+                    <div class="btn-group">
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ng-disabled="isStableMenu" ng-class="isStableMenu ? '' : 'btn-danger'">
+                            Stable Data <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li ng-repeat="menu in stableRightClickMenuList" ng-class="menu == 'Copy Chapter' ? '' : 'disableMenu'">
+                                <a href="javascript:void(0)" data-ng-click="actionOnMenuClick(menu)" >{{menu}}</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Single button -->
+                    <div class="btn-group">
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ng-disabled="isWipMenu" ng-class="isWipMenu ? '' : 'btn-success'">
+                            WIP Data <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li ng-repeat="menu in wipRightClickMenuList">
+                                <a href="javascript:void(0)" data-ng-click="actionOnMenuClick(menu)">{{menu}}</a>
+                            </li>                 
+                        </ul>
+                        </div>
+                    </div>
+                <br/>
+        </div>
+    </div>
+
+    <!-- Pop Out Modal -->
+	<div class="modal fade" id="modal-popout" tabindex="-1" role="dialog" aria-hidden="true">
+	    <div class="modal-dialog modal-dialog-popout modal-lg">
+	        <div class="modal-content">
+	            <div class="block block-themed block-transparent remove-margin-b">
+	                <div class="block-header bg-primary-dark">
+	                    <ul class="block-options">
+	                        <li>
+	                            <button data-dismiss="modal" type="button"><i class="si si-close"></i></button>
+	                        </li>
+	                    </ul>
+	                    <h3 class="block-title">Metadata Information</h3>
+	                </div>
+	                <div class="block-content">
+	                     <!-- Block Tabs Animated Fade -->
+            <div class="block">
+                <ul class="nav nav-tabs" data-js-tabs>
+                    <li class="active">
+                        <a href="#btabs-animated-fade-home">fileName</a>
+                    </li>
+                    <li style="display: none">
+                        <a href="#btabs-animated-fade-profile">acfm_volI.XML</a>
+                    </li>
+                    <li class="pull-right" style="display: none">
+                        <a href="#btabs-animated-fade-settings" data-uib-tooltip="Edit XML"><i class="si si-note"></i></a>
+                    </li>
+                </ul>
+                <div class="block-content tab-content">
+                    <div class="tab-pane fade in active" id="btabs-animated-fade-home">
+                        <h4 class="font-w300 push-15">acfm_latest_udpates_198951_6371_01.XML</h4>
+                        <table border="0" class="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Value</th>
+                                    <th>Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="meta in metaDataList">
+                                    <td>{{meta.NAME}}</td>
+                                    <td>{{meta.VALUE}}</td>
+                                    <td>{{meta.TYPE}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="tab-pane fade" id="btabs-animated-fade-profile">
+                        <h4 class="font-w300 push-15">acfm_volI.XML</h4>
+                        <table border="0" class="table">
+                            <tbody>
+                                <tr>
+                                    <th>NAME</th>
+                                    <th>VALUE</th>
+                                    <th>TYPE</th>
+                                </tr>
+                                <tr>
+                                    <td>title</td>
+                                    <td>division xi</td>
+                                    <td>Meta Data</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>comm.chap_id</td>
+                                    <td>mc.div_xi</td>
+                                    <td>Meta Data</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>comm.chap_title</td>
+                                    <td>state land rules</td>
+                                    <td>Meta Data</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="tab-pane fade" id="btabs-animated-fade-settings">
+                        <h4 class="font-w300 push-15">Opening...</h4>
+                        <p>This will open up the XML editor...</p>
+                    </div>
+                </div>
+            </div>
+            <!-- END Block Tabs Animated Fade -->
+	                </div>
+	            </div>
+	            <div class="modal-footer">
+	                <button class="btn btn-sm btn-default" type="button" data-dismiss="modal">Close</button>
+	                <button class="btn btn-sm btn-primary" type="button" data-dismiss="modal"><i class="fa fa-check"></i> Ok</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<!-- END Pop Out Modal -->
+    <div class="modal fade" id="getFolderPopup" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-top">
+        <div class="modal-content">
+            <div class="block block-themed block-transparent remove-margin-b">
+                <div class="block-header bg-primary-dark">
+                    <ul class="block-options">
+                        <li>
+                            <button data-dismiss="modal" type="button"><i class="si si-close"></i></button>
+                        </li>
+                    </ul>
+                    <h3 class="block-title">Issue Level Folder Popup</h3>
+                </div>
+                <div class="block-content">
+                    <div class="block-content block-content-narrow">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="val-sub-folder">Sub Folder<span class="text-danger">*</span></label>
+                                <div class="col-md-7">
+                                    <input class="form-control" type="text" id="subFolder" ng-model="subFolder" name="subFolder" placeholder="Choose a sub folder name..">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-sm btn-default" type="button" data-dismiss="modal">Close</button>
+                <button class="btn btn-sm btn-primary" type="button" ng-click="actionOnStableRightClickMenu();"><i class="fa fa-check"></i> Ok</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+</div>
+<!-- END Page Content -->
