@@ -82,16 +82,16 @@ module.exports = function (grunt) {
                     '<%= pathDev %>/<%= pathAssets %>/js/core/ocLazyLoad.min.js',
                     '<%= pathDev %>/<%= pathAssets %>/js/core/ngStorage.min.js',
                     '<%= pathDev %>/<%= pathAssets %>/js/app.js',
-					'<%= pathDev %>/<%= pathAssets %>/js/app-config.js',
+		    '<%= pathDev %>/<%= pathAssets %>/js/app-config.js',
                     '<%= pathDev %>/<%= pathAssets %>/js/directives/directive.js',
                     '<%= pathDev %>/<%= pathAssets %>/js/controllers/app-controller.js',
-					'<%= pathDev %>/<%= pathAssets %>/js/controllers/dashboard-controller.js',
-					'<%= pathDev %>/<%= pathAssets %>/js/controllers/header-controller.js',
-					'<%= pathDev %>/<%= pathAssets %>/js/controllers/login-controller.js',
-					'<%= pathDev %>/<%= pathAssets %>/js/controllers/main-controller.js',
-					'<%= pathDev %>/<%= pathAssets %>/js/controllers/page-content-tree-controller.js',
-					'<%= pathDev %>/<%= pathAssets %>/js/controllers/side-overlay-controller.js',
-					'<%= pathDev %>/<%= pathAssets %>/js/controllers/sidebar-controller.js'
+		    '<%= pathDev %>/<%= pathAssets %>/js/controllers/dashboard-controller.js',
+		    '<%= pathDev %>/<%= pathAssets %>/js/controllers/header-controller.js',
+		    '<%= pathDev %>/<%= pathAssets %>/js/controllers/login-controller.js',
+		    '<%= pathDev %>/<%= pathAssets %>/js/controllers/main-controller.js',
+		    '<%= pathDev %>/<%= pathAssets %>/js/controllers/page-content-tree-controller.js',
+		    '<%= pathDev %>/<%= pathAssets %>/js/controllers/side-overlay-controller.js',
+		    '<%= pathDev %>/<%= pathAssets %>/js/controllers/sidebar-controller.js'
                 ],
                 dest: '<%= pathBuild %>/<%= pathAssets %>/js/poc.min.js'
             }
@@ -154,7 +154,7 @@ module.exports = function (grunt) {
 
     // Load tasks
     grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-ng-annotate');
+    grunt.loadNpmTasks('grunt-ng-annotate');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-concat');
@@ -165,5 +165,5 @@ module.exports = function (grunt) {
     // Register Tasks
     //grunt.registerTask('default', ['watch']);
     //grunt.registerTask('build', ['clean:build', 'less:build', 'concat:build', 'uglify:build', 'copy:build', 'processhtml:build']);
-	grunt.registerTask('default', ['ngAnnotate:build', 'clean:build', 'less:build', 'concat:build', 'uglify:build', 'copy:build', 'processhtml:build']);
+    grunt.registerTask('default', ['ngAnnotate:build', 'clean:build', 'less:build', 'concat:build', 'uglify:build', 'copy:build', 'processhtml:build']);
 };
